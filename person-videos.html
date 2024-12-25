@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Videos by Person</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>🎥 Sk Video Hub</h1>
+    </div>
+    <nav>
+        <ul>
+          <li><button id="logoutBtn" class="logout-button">Logout</button></li>
+        </ul>
+      </nav>
+  
+  </header>
+
+  <section id="videos-section" class="videos">
+    <h2 id="person-name">Videos</h2>
+    <div class="video-grid"></div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Sk Video Hub | Built with ❤️ by Sk</p>
+  </footer>
+  <script type="module">
+    // Logout functionality
+    document.getElementById("logoutBtn").addEventListener("click", () => {
+      // Add your logout logic here (e.g., Firebase logout)
+      alert("Logging out...");
+      // Redirect to login page after logout
+      window.location.href = "login.html";
+    });
+  </script>
+  <script src="person-videos.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Categories</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>🎥 Sk Video Hub</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><button id="logoutBtn" class="logout-button">Logout</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="categories">
+    <h2>Select a Person to View Videos</h2>
+    <div class="person-grid">
+      <div class="person-card">
+        <a href="person-videos.html?person=person1">
+          <img src="img/Kishoth.jpg" alt="Kishoth">
+          <h3>Kishoth</h3>
+        </a>
+      </div>
+      <div class="person-card">
+        <a href="person-videos.html?person=person2">
+          <img src="img/Rolex.jpg" alt="Karthi">
+          <h3>Karthi</h3>
+        </a>
+      </div>
+      <div class="person-card">
+        <a href="person-videos.html?person=person3">
+          <img src="img/Makesh.jpg" alt="Michael Lee">
+          <h3>Makesh</h3>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Sk Video Hub | Built with ❤️ by Sk</p>
+  </footer>
+
+  <script type="module">
+    // Logout functionality
+    document.getElementById("logoutBtn").addEventListener("click", () => {
+      // Add your logout logic here (e.g., Firebase logout)
+      alert("Logging out...");
+      // Redirect to demologin page after logout
+      window.location.href = "demologin.html";
+    });
+  </script>
+</body>
+</html>
